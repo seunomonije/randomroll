@@ -181,6 +181,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     var canJump = true
+    //change
     
     func didBeginContactGround(contact: SKPhysicsContact){
         let contactMask = contact.bodyA.categoryBitMask | contact.bodyB.categoryBitMask
