@@ -16,13 +16,24 @@
 		70235D041C4940B000F655C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70235D021C4940B000F655C2 /* LaunchScreen.storyboard */; };
 		70235D0F1C4940B000F655C2 /* RandomRollTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70235D0E1C4940B000F655C2 /* RandomRollTests.swift */; };
 		70235D1A1C4940B000F655C2 /* RandomRollUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70235D191C4940B000F655C2 /* RandomRollUITests.swift */; };
+		702853F31CB7F6D200EB318D /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 702853F21CB7F6D200EB318D /* Media.xcassets */; };
+		702853F51CB7F81000EB318D /* RandomRollBarrellIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 702853F41CB7F81000EB318D /* RandomRollBarrellIcon.png */; };
+		703AD6971CB2B11B004D4B8F /* defaultbackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 703AD6961CB2B11B004D4B8F /* defaultbackground.png */; };
 		70718C4B1C4E8BBE008DEFE2 /* background-music-aac.caf in Resources */ = {isa = PBXBuildFile; fileRef = 70718C481C4E8BBC008DEFE2 /* background-music-aac.caf */; };
 		70718C4C1C4E8BBE008DEFE2 /* pew-pew-lei.caf in Resources */ = {isa = PBXBuildFile; fileRef = 70718C491C4E8BBC008DEFE2 /* pew-pew-lei.caf */; };
 		70718C4D1C4E8BBE008DEFE2 /* sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 70718C4A1C4E8BBC008DEFE2 /* sprites.atlas */; };
+		707FE59E1C999CAA0055EE67 /* Sprite1.png in Resources */ = {isa = PBXBuildFile; fileRef = 707FE59D1C999CAA0055EE67 /* Sprite1.png */; };
+		707FE5A61C9AF0F90055EE67 /* Backgroundblack.png in Resources */ = {isa = PBXBuildFile; fileRef = 707FE5A51C9AF0F90055EE67 /* Backgroundblack.png */; };
 		7083B3631C62551300AA1358 /* barrelSprite.png in Resources */ = {isa = PBXBuildFile; fileRef = 7083B3621C62551300AA1358 /* barrelSprite.png */; };
+		7083F42F1CB406AC00503EFE /* BearImages.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 7083F42E1CB406AC00503EFE /* BearImages.atlas */; };
+		709E5E741CB6A61300D9C7EE /* RandomRollLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 709E5E731CB6A61300D9C7EE /* RandomRollLogo.png */; };
 		709E785C1C6100BE00F05BB1 /* scrollingclouds.png in Resources */ = {isa = PBXBuildFile; fileRef = 709E785B1C6100BE00F05BB1 /* scrollingclouds.png */; };
 		709E785E1C6100C600F05BB1 /* bg1.png in Resources */ = {isa = PBXBuildFile; fileRef = 709E785D1C6100C600F05BB1 /* bg1.png */; };
+		70A1AEBE1CB7EF7700CA43CD /* StartButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 70A1AEBD1CB7EF7700CA43CD /* StartButton.png */; };
+		70A1AEC01CB7EF7D00CA43CD /* RestartButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 70A1AEBF1CB7EF7D00CA43CD /* RestartButton.png */; };
 		70A22F371C8498AF00C8AFC7 /* xgqFk.png in Resources */ = {isa = PBXBuildFile; fileRef = 70A22F361C8498AF00C8AFC7 /* xgqFk.png */; };
+		70BD31621CAD655F0038BA35 /* randomroll.png in Resources */ = {isa = PBXBuildFile; fileRef = 70BD31611CAD655F0038BA35 /* randomroll.png */; };
+		70BD31661CAD68970038BA35 /* long.png in Resources */ = {isa = PBXBuildFile; fileRef = 70BD31651CAD68970038BA35 /* long.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,13 +69,24 @@
 		70235D151C4940B000F655C2 /* RandomRollUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomRollUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		70235D191C4940B000F655C2 /* RandomRollUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomRollUITests.swift; sourceTree = "<group>"; };
 		70235D1B1C4940B000F655C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		702853F21CB7F6D200EB318D /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		702853F41CB7F81000EB318D /* RandomRollBarrellIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RandomRollBarrellIcon.png; sourceTree = "<group>"; };
+		703AD6961CB2B11B004D4B8F /* defaultbackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defaultbackground.png; sourceTree = "<group>"; };
 		70718C481C4E8BBC008DEFE2 /* background-music-aac.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "background-music-aac.caf"; sourceTree = "<group>"; };
 		70718C491C4E8BBC008DEFE2 /* pew-pew-lei.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pew-pew-lei.caf"; sourceTree = "<group>"; };
 		70718C4A1C4E8BBC008DEFE2 /* sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = sprites.atlas; sourceTree = "<group>"; };
+		707FE59D1C999CAA0055EE67 /* Sprite1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sprite1.png; sourceTree = "<group>"; };
+		707FE5A51C9AF0F90055EE67 /* Backgroundblack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Backgroundblack.png; sourceTree = "<group>"; };
 		7083B3621C62551300AA1358 /* barrelSprite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = barrelSprite.png; sourceTree = "<group>"; };
+		7083F42E1CB406AC00503EFE /* BearImages.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = BearImages.atlas; sourceTree = "<group>"; };
+		709E5E731CB6A61300D9C7EE /* RandomRollLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RandomRollLogo.png; sourceTree = "<group>"; };
 		709E785B1C6100BE00F05BB1 /* scrollingclouds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scrollingclouds.png; sourceTree = "<group>"; };
 		709E785D1C6100C600F05BB1 /* bg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg1.png; sourceTree = "<group>"; };
+		70A1AEBD1CB7EF7700CA43CD /* StartButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StartButton.png; sourceTree = "<group>"; };
+		70A1AEBF1CB7EF7D00CA43CD /* RestartButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RestartButton.png; sourceTree = "<group>"; };
 		70A22F361C8498AF00C8AFC7 /* xgqFk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xgqFk.png; sourceTree = "<group>"; };
+		70BD31611CAD655F0038BA35 /* randomroll.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = randomroll.png; sourceTree = "<group>"; };
+		70BD31651CAD68970038BA35 /* long.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = long.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +138,7 @@
 		70235CF41C4940B000F655C2 /* RandomRoll */ = {
 			isa = PBXGroup;
 			children = (
+				7083F42E1CB406AC00503EFE /* BearImages.atlas */,
 				70235CF51C4940B000F655C2 /* AppDelegate.swift */,
 				701F25B71C74C99A004580A9 /* spritestore.swift */,
 				70235CF91C4940B000F655C2 /* GameScene.swift */,
@@ -123,11 +146,21 @@
 				70235CFD1C4940B000F655C2 /* Main.storyboard */,
 				70235D001C4940B000F655C2 /* Assets.xcassets */,
 				70235D021C4940B000F655C2 /* LaunchScreen.storyboard */,
+				702853F21CB7F6D200EB318D /* Media.xcassets */,
+				709E5E731CB6A61300D9C7EE /* RandomRollLogo.png */,
 				70235D051C4940B000F655C2 /* Info.plist */,
+				70BD31651CAD68970038BA35 /* long.png */,
+				703AD6961CB2B11B004D4B8F /* defaultbackground.png */,
+				70BD31611CAD655F0038BA35 /* randomroll.png */,
 				709E785B1C6100BE00F05BB1 /* scrollingclouds.png */,
 				709E785D1C6100C600F05BB1 /* bg1.png */,
+				707FE5A51C9AF0F90055EE67 /* Backgroundblack.png */,
+				702853F41CB7F81000EB318D /* RandomRollBarrellIcon.png */,
 				70A22F361C8498AF00C8AFC7 /* xgqFk.png */,
 				7083B3621C62551300AA1358 /* barrelSprite.png */,
+				70A1AEBF1CB7EF7D00CA43CD /* RestartButton.png */,
+				70A1AEBD1CB7EF7700CA43CD /* StartButton.png */,
+				707FE59D1C999CAA0055EE67 /* Sprite1.png */,
 			);
 			path = RandomRoll;
 			sourceTree = "<group>";
@@ -273,13 +306,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				70718C4B1C4E8BBE008DEFE2 /* background-music-aac.caf in Resources */,
+				707FE5A61C9AF0F90055EE67 /* Backgroundblack.png in Resources */,
 				70235D041C4940B000F655C2 /* LaunchScreen.storyboard in Resources */,
+				709E5E741CB6A61300D9C7EE /* RandomRollLogo.png in Resources */,
 				70235D011C4940B000F655C2 /* Assets.xcassets in Resources */,
 				709E785C1C6100BE00F05BB1 /* scrollingclouds.png in Resources */,
+				702853F51CB7F81000EB318D /* RandomRollBarrellIcon.png in Resources */,
 				709E785E1C6100C600F05BB1 /* bg1.png in Resources */,
 				70718C4C1C4E8BBE008DEFE2 /* pew-pew-lei.caf in Resources */,
+				707FE59E1C999CAA0055EE67 /* Sprite1.png in Resources */,
+				70BD31661CAD68970038BA35 /* long.png in Resources */,
 				70718C4D1C4E8BBE008DEFE2 /* sprites.atlas in Resources */,
+				70BD31621CAD655F0038BA35 /* randomroll.png in Resources */,
 				70235CFF1C4940B000F655C2 /* Main.storyboard in Resources */,
+				70A1AEC01CB7EF7D00CA43CD /* RestartButton.png in Resources */,
+				702853F31CB7F6D200EB318D /* Media.xcassets in Resources */,
+				7083F42F1CB406AC00503EFE /* BearImages.atlas in Resources */,
+				70A1AEBE1CB7EF7700CA43CD /* StartButton.png in Resources */,
+				703AD6971CB2B11B004D4B8F /* defaultbackground.png in Resources */,
 				7083B3631C62551300AA1358 /* barrelSprite.png in Resources */,
 				70A22F371C8498AF00C8AFC7 /* xgqFk.png in Resources */,
 			);
