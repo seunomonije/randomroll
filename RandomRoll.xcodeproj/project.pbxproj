@@ -19,9 +19,6 @@
 		702853F31CB7F6D200EB318D /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 702853F21CB7F6D200EB318D /* Media.xcassets */; };
 		702853F51CB7F81000EB318D /* RandomRollBarrellIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 702853F41CB7F81000EB318D /* RandomRollBarrellIcon.png */; };
 		703AD6971CB2B11B004D4B8F /* defaultbackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 703AD6961CB2B11B004D4B8F /* defaultbackground.png */; };
-		70718C4B1C4E8BBE008DEFE2 /* background-music-aac.caf in Resources */ = {isa = PBXBuildFile; fileRef = 70718C481C4E8BBC008DEFE2 /* background-music-aac.caf */; };
-		70718C4C1C4E8BBE008DEFE2 /* pew-pew-lei.caf in Resources */ = {isa = PBXBuildFile; fileRef = 70718C491C4E8BBC008DEFE2 /* pew-pew-lei.caf */; };
-		70718C4D1C4E8BBE008DEFE2 /* sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 70718C4A1C4E8BBC008DEFE2 /* sprites.atlas */; };
 		707FE59E1C999CAA0055EE67 /* Sprite1.png in Resources */ = {isa = PBXBuildFile; fileRef = 707FE59D1C999CAA0055EE67 /* Sprite1.png */; };
 		707FE5A61C9AF0F90055EE67 /* Backgroundblack.png in Resources */ = {isa = PBXBuildFile; fileRef = 707FE5A51C9AF0F90055EE67 /* Backgroundblack.png */; };
 		7083B3631C62551300AA1358 /* barrelSprite.png in Resources */ = {isa = PBXBuildFile; fileRef = 7083B3621C62551300AA1358 /* barrelSprite.png */; };
@@ -72,9 +69,6 @@
 		702853F21CB7F6D200EB318D /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		702853F41CB7F81000EB318D /* RandomRollBarrellIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RandomRollBarrellIcon.png; sourceTree = "<group>"; };
 		703AD6961CB2B11B004D4B8F /* defaultbackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defaultbackground.png; sourceTree = "<group>"; };
-		70718C481C4E8BBC008DEFE2 /* background-music-aac.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "background-music-aac.caf"; sourceTree = "<group>"; };
-		70718C491C4E8BBC008DEFE2 /* pew-pew-lei.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pew-pew-lei.caf"; sourceTree = "<group>"; };
-		70718C4A1C4E8BBC008DEFE2 /* sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = sprites.atlas; sourceTree = "<group>"; };
 		707FE59D1C999CAA0055EE67 /* Sprite1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sprite1.png; sourceTree = "<group>"; };
 		707FE5A51C9AF0F90055EE67 /* Backgroundblack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Backgroundblack.png; sourceTree = "<group>"; };
 		7083B3621C62551300AA1358 /* barrelSprite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = barrelSprite.png; sourceTree = "<group>"; };
@@ -121,7 +115,6 @@
 				70235D0D1C4940B000F655C2 /* RandomRollTests */,
 				70235D181C4940B000F655C2 /* RandomRollUITests */,
 				70235CF31C4940B000F655C2 /* Products */,
-				70718C461C4E8BBC008DEFE2 /* SpriteKitSimpleGameResources */,
 			);
 			sourceTree = "<group>";
 		};
@@ -181,24 +174,6 @@
 				70235D1B1C4940B000F655C2 /* Info.plist */,
 			);
 			path = RandomRollUITests;
-			sourceTree = "<group>";
-		};
-		70718C461C4E8BBC008DEFE2 /* SpriteKitSimpleGameResources */ = {
-			isa = PBXGroup;
-			children = (
-				70718C471C4E8BBC008DEFE2 /* Sounds */,
-				70718C4A1C4E8BBC008DEFE2 /* sprites.atlas */,
-			);
-			path = SpriteKitSimpleGameResources;
-			sourceTree = "<group>";
-		};
-		70718C471C4E8BBC008DEFE2 /* Sounds */ = {
-			isa = PBXGroup;
-			children = (
-				70718C481C4E8BBC008DEFE2 /* background-music-aac.caf */,
-				70718C491C4E8BBC008DEFE2 /* pew-pew-lei.caf */,
-			);
-			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,7 +280,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70718C4B1C4E8BBE008DEFE2 /* background-music-aac.caf in Resources */,
 				707FE5A61C9AF0F90055EE67 /* Backgroundblack.png in Resources */,
 				70235D041C4940B000F655C2 /* LaunchScreen.storyboard in Resources */,
 				709E5E741CB6A61300D9C7EE /* RandomRollLogo.png in Resources */,
@@ -313,10 +287,8 @@
 				709E785C1C6100BE00F05BB1 /* scrollingclouds.png in Resources */,
 				702853F51CB7F81000EB318D /* RandomRollBarrellIcon.png in Resources */,
 				709E785E1C6100C600F05BB1 /* bg1.png in Resources */,
-				70718C4C1C4E8BBE008DEFE2 /* pew-pew-lei.caf in Resources */,
 				707FE59E1C999CAA0055EE67 /* Sprite1.png in Resources */,
 				70BD31661CAD68970038BA35 /* long.png in Resources */,
-				70718C4D1C4E8BBE008DEFE2 /* sprites.atlas in Resources */,
 				70BD31621CAD655F0038BA35 /* randomroll.png in Resources */,
 				70235CFF1C4940B000F655C2 /* Main.storyboard in Resources */,
 				70A1AEC01CB7EF7D00CA43CD /* RestartButton.png in Resources */,
