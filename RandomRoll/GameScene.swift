@@ -79,12 +79,12 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
       
-            
-        player.physicsBody?.dynamic = true
+        if canJump == 1 {
+            player.physicsBody?.dynamic = true
 
-        player.physicsBody?.applyImpulse(CGVector(dx: 0.0, dy: 10.0))
-        physicsWorld.gravity = CGVector(dx: 0.0, dy: -0.9)
-        
+            player.physicsBody?.applyImpulse(CGVector(dx: 0.0, dy: 10.0))
+            physicsWorld.gravity = CGVector(dx: 0.0, dy: -0.9)
+        }
      
     }
    override func update(currentTime: NSTimeInterval) {
