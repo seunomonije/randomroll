@@ -78,13 +78,16 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     }
     override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
-      
-            
-        player.physicsBody?.dynamic = true
-
-        player.physicsBody?.applyImpulse(CGVector(dx: 0.0, dy: 10.0))
-        physicsWorld.gravity = CGVector(dx: 0.0, dy: -0.9)
         
+        player.physicsBody?.dynamic = true
+        let jumpHighest = SKAction.runBlock({player.physicsBody?.applyImpulse(CGVector(dx: 0.0, dy: 10.0))})
+        physicsWorld.gravity = CGVector(dx: 0.0, dy: -0.9)
+        let jumpHighestAction = SKAction.sequence([jumpHighest, SKAction.waitForDuration(3.0)])
+        
+        if actionForKey("yeetyah") == nil {
+            runAction(jumpHighestAction, withKey: "yeetyah")
+        }
+
      
     }
    override func update(currentTime: NSTimeInterval) {
