@@ -17,8 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RandomRollLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="avU-TX-yYU">
-                                <rect key="frame" x="13" y="93" width="295" height="57"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MrRollLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="avU-TX-yYU">
+                                <rect key="frame" x="13" y="128" width="295" height="57"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -31,6 +31,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="RandomRollLogo.png" width="801" height="153"/>
+        <image name="MrRollLogo.png" width="801" height="153"/>
     </resources>
 </document>

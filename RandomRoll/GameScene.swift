@@ -21,7 +21,7 @@ var player : SKSpriteNode!
 var playerWalkingFrames: [SKTexture]!
 
 class GameScene: SKScene, SKPhysicsContactDelegate {
-    let gameName = SKSpriteNode(imageNamed: "randomrolllogo")
+    let gameName = SKSpriteNode(imageNamed: "mrrolllogo")
     let background1 = SKSpriteNode(imageNamed: "defaultbackground")
     let background2 = SKSpriteNode(imageNamed: "defaultbackground")
     let cloud = SKSpriteNode(imageNamed: "scrollingclouds")
