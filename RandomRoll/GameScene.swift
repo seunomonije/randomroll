@@ -92,10 +92,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
      
     }
    override func update(currentTime: NSTimeInterval) {
-        background1.position = CGPoint(x: background1.position.x - 1, y: background1.position.y)
-        background2.position = CGPoint(x: background2.position.x - 1, y: background2.position.y)
-        background3.position = CGPoint(x: background2.position.x - 1, y: background2.position.y)
-        
+        background1.position = CGPoint(x: background1.position.x - 4, y: background1.position.y)
+        background2.position = CGPoint(x: background2.position.x - 4, y: background2.position.y)
+    
         if (background1.position.x < -background1.size.width){
             background1.position = CGPointMake(background2.position.x + background2.size.width, background1.position.y)
         }
@@ -103,7 +102,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         if background2.position.x < -background2.size.width {
             background2.position = CGPointMake(background1.position.x + background1.size.width, background2.position.y)
         }
-       
+    
     }
     func gameNameSetUp(){
         gameName.position = CGPoint(x: size.width/2, y: size.height / 1.2)
@@ -126,10 +125,10 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         addChild(background2)
         
         background3.anchorPoint = CGPointZero
-        background3.position = CGPointMake(background3.size.width - 1, 0)
+        background3.position = CGPointMake(0, 0)
         background3.size = CGSize(width: fraction , height: size.height)
-        background3.zPosition = -1
-        addChild(background2)
+        background3.zPosition = -3
+        addChild(background3)
     }
     
     func startGame(){
