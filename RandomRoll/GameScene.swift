@@ -41,8 +41,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     
     
-  
-    override func didMoveToView(view: SKView) {
+       override func didMoveToView(view: SKView) {
         physicsWorld.gravity = CGVector(dx: 0.0, dy: -2.0)
         self.view!.backgroundColor = UIColor(patternImage: UIImage(named: "defaultbackground")!)
         //makes sprite appear on the scene
@@ -92,8 +91,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
      
     }
    override func update(currentTime: NSTimeInterval) {
-        background1.position = CGPoint(x: background1.position.x - 4, y: background1.position.y)
-        background2.position = CGPoint(x: background2.position.x - 4, y: background2.position.y)
+        background1.position = CGPoint(x: background1.position.x - 2.5, y: background1.position.y)
+        background2.position = CGPoint(x: background2.position.x - 2.5, y: background2.position.y)
     
         if (background1.position.x < -background1.size.width){
             background1.position = CGPointMake(background2.position.x + background2.size.width, background1.position.y)
