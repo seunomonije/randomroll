@@ -103,6 +103,30 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         }
     
     }
+    func moveBackground(){
+        let backgroundVelocity: CGFloat = 10.0
+        self.enumerateChildNodesWithName("background", usingBlock { (node, stop) -> Void in
+            if let bg = node as? SKSpriteNode {
+                bg.position = CGPoint(x: bg.position.x, y: bg.position.y - backgroundVelocity)
+                
+                //checks if node is completely off screen
+                if bg.position.y <= -bg.size.height {
+                    bg.position = CGPointMake(bg.position.x, bg.position.y + bg.size.height * 2)
+                }
+            }
+        })
+    }
+    func initializingScrollingBackground() {
+        self.addChild(background)
+        for var index = 0; index <2; index++ {
+            let bg = SKSpriteNode(imageNamed: "bg")
+            bg.position = CGPoint(x:0, y: index * Int(bg.size.height))
+            bg.anchorPoint = CGPointZero
+            bg.name = "background"
+            bg.zPosition = 10
+            self.addChild(bg)
+        }
+    }
     func gameNameSetUp(){
         gameName.position = CGPoint(x: size.width/2, y: size.height / 1.2)
         let fractionsize = size.width / 1.1
