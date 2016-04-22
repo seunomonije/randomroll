@@ -21,6 +21,8 @@ var player : SKSpriteNode!
 var playerWalkingFrames: [SKTexture]!
 
 class GameScene: SKScene, SKPhysicsContactDelegate {
+    var bg1 = SKSpriteNode(imageNamed: "iphone5@2x")
+    var bg2 = SKSpriteNode(imageNamed: "iphone5@2x")
     let gameName = SKSpriteNode(imageNamed: "mrrolllogo")
     let background1 = SKSpriteNode(imageNamed: "defaultbackground")
     let background2 = SKSpriteNode(imageNamed: "defaultbackground")
@@ -40,10 +42,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var onStartScreen = true
     
     
-    
        override func didMoveToView(view: SKView) {
         physicsWorld.gravity = CGVector(dx: 0.0, dy: -2.0)
-        self.view!.backgroundColor = UIColor(patternImage: UIImage(named: "defaultbackground")!)
         //makes sprite appear on the scene
         addPlayer()
         addGround()
@@ -52,8 +52,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         gameNameSetUp()
         walkingPlayer()
         dead = false
-
     }
+   
+    
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         //basically my tap to start feature. i set the player's dynamic to false at the play screen, then on the first tap it runs the game, then every other tap it normally jumps
         if dead == true {
@@ -63,8 +64,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         }
         if canJump == 2 {
             player.physicsBody?.dynamic = true
-            player.physicsBody?.applyImpulse(CGVector(dx: 0.0, dy: 150.0))
-             physicsWorld.gravity = CGVector(dx: 0.0, dy: -2.5)
+            player.physicsBody?.applyImpulse(CGVector(dx: 0.0, dy: 40.0))
+             physicsWorld.gravity = CGVector(dx: 0.0, dy: -1.5)
             canJump = 1
         } else if dead == false && onStartScreen {
             startGame()
@@ -80,8 +81,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
         
         player.physicsBody?.dynamic = true
-        let jumpHighest = SKAction.runBlock({player.physicsBody?.applyImpulse(CGVector(dx: 0.0, dy: 10.0))})
-        physicsWorld.gravity = CGVector(dx: 0.0, dy: -0.9)
+        let jumpHighest = SKAction.runBlock({player.physicsBody?.applyImpulse(CGVector(dx: 0.0, dy: 50.0))})
         let jumpHighestAction = SKAction.sequence([jumpHighest, SKAction.waitForDuration(3.0)])
         
         if actionForKey("yeetyah") == nil {
@@ -90,68 +90,42 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
 
      
     }
-   override func update(currentTime: NSTimeInterval) {
-        background1.position = CGPoint(x: background1.position.x - 2.5, y: background1.position.y)
-        background2.position = CGPoint(x: background2.position.x - 2.5, y: background2.position.y)
     
-        if (background1.position.x < -background1.size.width){
-            background1.position = CGPointMake(background2.position.x + background2.size.width, background1.position.y)
+   func backgroundSetUp() {
+    
+        bg1.anchorPoint = CGPointZero
+        bg1.position = CGPointMake(0,0)
+        bg1.zPosition = -2
+        bg1.height = size.height
+        bg1.name = "background"
+        addChild(background1)
+        
+        bg2.anchorPoint = CGPointZero
+        bg2.position = CGPointMake(background2.size.width-1, 0)
+        bg2.zPosition = -1
+        bg2.height = size.height
+        addChild(background2)
+        
+    }
+
+   override func update(currentTime: CFTimeInterval) {
+        bg1.position = CGPoint(x: bg1.position.x - 4, y: background1.position.y)
+        bg2.position = CGPoint(x: bg2.position.x - 4, y: background2.position.y)
+    
+        if (bg1.position.x < -bg1.size.width){
+            bg1.position = CGPointMake(bg2.position.x + bg2.size.width, bg1.position.y)
         }
         
         if background2.position.x < -background2.size.width {
-            background2.position = CGPointMake(background1.position.x + background1.size.width, background2.position.y)
+            bg2.position = CGPointMake(bg1.position.x + bg1.size.width, bg2.position.y)
         }
     
     }
-    func moveBackground(){
-        let backgroundVelocity: CGFloat = 10.0
-        self.enumerateChildNodesWithName("background", usingBlock { (node, stop) -> Void in
-            if let bg = node as? SKSpriteNode {
-                bg.position = CGPoint(x: bg.position.x, y: bg.position.y - backgroundVelocity)
-                
-                //checks if node is completely off screen
-                if bg.position.y <= -bg.size.height {
-                    bg.position = CGPointMake(bg.position.x, bg.position.y + bg.size.height * 2)
-                }
-            }
-        })
-    }
-    func initializingScrollingBackground() {
-        self.addChild(background)
-        for var index = 0; index <2; index++ {
-            let bg = SKSpriteNode(imageNamed: "bg")
-            bg.position = CGPoint(x:0, y: index * Int(bg.size.height))
-            bg.anchorPoint = CGPointZero
-            bg.name = "background"
-            bg.zPosition = 10
-            self.addChild(bg)
-        }
-    }
-    func gameNameSetUp(){
+           func gameNameSetUp(){
         gameName.position = CGPoint(x: size.width/2, y: size.height / 1.2)
         let fractionsize = size.width / 1.1
         gameName.size = CGSize(width: fractionsize, height : fractionsize / 5.22)
         addChild(gameName)
-    }
-    func backgroundSetUp() {
-        let fraction = size.height * (8/3)
-        background1.anchorPoint = CGPointZero
-        background1.position = CGPointMake(0,0)
-        background1.size = CGSize(width: fraction , height: size.height)
-        background1.zPosition = -2
-        addChild(background1)
-        
-        background2.anchorPoint = CGPointZero
-        background2.position = CGPointMake(background2.size.width - 1, 0)
-        background2.size = CGSize(width: fraction , height: size.height)
-        background2.zPosition = -1
-        addChild(background2)
-        
-        background3.anchorPoint = CGPointZero
-        background3.position = CGPointMake(0, 0)
-        background3.size = CGSize(width: fraction , height: size.height)
-        background3.zPosition = -3
-        addChild(background3)
     }
     
     func startGame(){

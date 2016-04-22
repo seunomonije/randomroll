@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RandomRoll/GameScene.swift"
-            timestampString = "482682265.009238"
+            timestampString = "483030715.529138"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "243"
-            endingLineNumber = "243"
-            landmarkName = "random()"
+            startingLineNumber = "215"
+            endingLineNumber = "215"
+            landmarkName = "addPlayer()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -105,11 +105,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RandomRoll/GameScene.swift"
-            timestampString = "481646941.091985"
+            timestampString = "483030489.854616"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
             landmarkName = "didMoveToView(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -121,11 +121,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RandomRoll/GameScene.swift"
-            timestampString = "481646941.091985"
+            timestampString = "483030489.854616"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
             landmarkName = "didMoveToView(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -153,12 +153,12 @@
                   moduleName = "RandomRoll"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/18omonijes/Desktop/RandomRoll/RandomRoll/GameViewController.swift"
-                  timestampString = "482334750.803234"
+                  timestampString = "483028595.135382"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
                   endingLineNumber = "0"
-                  offsetFromSymbolStart = "12">
+                  offsetFromSymbolStart = "19">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -168,12 +168,12 @@
                   moduleName = "RandomRoll"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/18omonijes/Desktop/RandomRoll/RandomRoll/GameViewController.swift"
-                  timestampString = "482334750.803834"
+                  timestampString = "483028595.136031"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
                   endingLineNumber = "0"
-                  offsetFromSymbolStart = "16">
+                  offsetFromSymbolStart = "27">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -185,11 +185,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RandomRoll/GameScene.swift"
-            timestampString = "481646941.091985"
+            timestampString = "483030489.854616"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
             landmarkName = "GameScene"
             landmarkType = "3">
             <Locations>
@@ -197,31 +197,31 @@
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "RandomRoll.GameScene.timerLabel.getter : __ObjC.SKLabelNode"
+                  symbolName = "RandomRoll.GameScene.timer.getter : __ObjC.NSTimer"
                   moduleName = "RandomRoll"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/18omonijes/Desktop/RandomRoll/RandomRoll/GameScene.swift"
-                  timestampString = "482334750.806007"
+                  timestampString = "483028595.137979"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
                   endingLineNumber = "0"
-                  offsetFromSymbolStart = "12">
+                  offsetFromSymbolStart = "18">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "RandomRoll.GameScene.timerLabel.setter : __ObjC.SKLabelNode"
+                  symbolName = "RandomRoll.GameScene.timer.setter : __ObjC.NSTimer"
                   moduleName = "RandomRoll"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/18omonijes/Desktop/RandomRoll/RandomRoll/GameScene.swift"
-                  timestampString = "482334750.806326"
+                  timestampString = "483028595.138283"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
                   endingLineNumber = "0"
-                  offsetFromSymbolStart = "16">
+                  offsetFromSymbolStart = "27">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -231,12 +231,12 @@
                   moduleName = "RandomRoll"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/18omonijes/Desktop/RandomRoll/RandomRoll/GameScene.swift"
-                  timestampString = "482334750.806925"
+                  timestampString = "483028595.138885"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "32"
-                  endingLineNumber = "32"
-                  offsetFromSymbolStart = "452">
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "685">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -246,12 +246,12 @@
                   moduleName = "RandomRoll"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/18omonijes/Desktop/RandomRoll/RandomRoll/GameScene.swift"
-                  timestampString = "482334750.807412"
+                  timestampString = "483028595.139186"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "32"
-                  endingLineNumber = "32"
-                  offsetFromSymbolStart = "429">
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "655">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -261,12 +261,12 @@
                   moduleName = "RandomRoll"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/18omonijes/Desktop/RandomRoll/RandomRoll/GameScene.swift"
-                  timestampString = "482334750.807702"
+                  timestampString = "483028595.139471"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "32"
-                  endingLineNumber = "32"
-                  offsetFromSymbolStart = "440">
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "664">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -278,27 +278,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RandomRoll/GameScene.swift"
-            timestampString = "482682265.009238"
+            timestampString = "483030715.529138"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "175"
-            endingLineNumber = "175"
-            landmarkName = "updateScoreWithValue(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RandomRoll/GameScene.swift"
-            timestampString = "482682265.009238"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "148"
-            endingLineNumber = "148"
+            startingLineNumber = "147"
+            endingLineNumber = "147"
             landmarkName = "goToGameScene()"
             landmarkType = "5">
          </BreakpointContent>
@@ -310,12 +294,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RandomRoll/GameScene.swift"
-            timestampString = "482682265.009238"
+            timestampString = "483030715.529138"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "246"
-            endingLineNumber = "246"
-            landmarkName = "random(min:max:)"
+            startingLineNumber = "218"
+            endingLineNumber = "218"
+            landmarkName = "addPlayer()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -326,11 +310,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RandomRoll/GameScene.swift"
-            timestampString = "481732403.024903"
+            timestampString = "483030489.854616"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
             landmarkName = "touchesBegan(_:withEvent:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -342,12 +326,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RandomRoll/GameScene.swift"
-            timestampString = "482682265.009238"
+            timestampString = "483030715.529138"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "309"
-            endingLineNumber = "309"
-            landmarkName = "didBeginContact(_:)"
+            startingLineNumber = "281"
+            endingLineNumber = "281"
+            landmarkName = "addMonster()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -358,11 +342,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RandomRoll/GameScene.swift"
-            timestampString = "482334749.639976"
+            timestampString = "483030489.854616"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
             landmarkName = "touchesMoved(_:withEvent:)"
             landmarkType = "5">
          </BreakpointContent>
