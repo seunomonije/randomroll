@@ -23,9 +23,7 @@
 		707FE5A61C9AF0F90055EE67 /* Backgroundblack.png in Resources */ = {isa = PBXBuildFile; fileRef = 707FE5A51C9AF0F90055EE67 /* Backgroundblack.png */; };
 		7083B3631C62551300AA1358 /* barrelSprite.png in Resources */ = {isa = PBXBuildFile; fileRef = 7083B3621C62551300AA1358 /* barrelSprite.png */; };
 		7083F42F1CB406AC00503EFE /* BearImages.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 7083F42E1CB406AC00503EFE /* BearImages.atlas */; };
-		70932FD11CCA671E008DD555 /* iphone5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 70932FD01CCA671E008DD555 /* iphone5@2x.png */; };
-		70932FD31CCA6AD2008DD555 /* iphone6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 70932FD21CCA6AD2008DD555 /* iphone6@2x.png */; };
-		70932FD51CCA6B67008DD555 /* iphone6plus@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 70932FD41CCA6B66008DD555 /* iphone6plus@3x.png */; };
+		70932FD71CCE5D8A008DD555 /* iphone5.png in Resources */ = {isa = PBXBuildFile; fileRef = 70932FD61CCE5D8A008DD555 /* iphone5.png */; };
 		709E5E741CB6A61300D9C7EE /* RandomRollLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 709E5E731CB6A61300D9C7EE /* RandomRollLogo.png */; };
 		709E785C1C6100BE00F05BB1 /* scrollingclouds.png in Resources */ = {isa = PBXBuildFile; fileRef = 709E785B1C6100BE00F05BB1 /* scrollingclouds.png */; };
 		709E785E1C6100C600F05BB1 /* bg1.png in Resources */ = {isa = PBXBuildFile; fileRef = 709E785D1C6100C600F05BB1 /* bg1.png */; };
@@ -33,6 +31,8 @@
 		70A1AEC01CB7EF7D00CA43CD /* RestartButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 70A1AEBF1CB7EF7D00CA43CD /* RestartButton.png */; };
 		70A22F371C8498AF00C8AFC7 /* xgqFk.png in Resources */ = {isa = PBXBuildFile; fileRef = 70A22F361C8498AF00C8AFC7 /* xgqFk.png */; };
 		70AD2FC11CC12CAB0054499C /* MrRollLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 70AD2FC01CC12CAB0054499C /* MrRollLogo.png */; };
+		70B8D63D1CCFAD5600A5AB68 /* iphone6.png in Resources */ = {isa = PBXBuildFile; fileRef = 70B8D63C1CCFAD5600A5AB68 /* iphone6.png */; };
+		70B8D63F1CCFAD7400A5AB68 /* iphone6plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 70B8D63E1CCFAD7400A5AB68 /* iphone6plus.png */; };
 		70BD31621CAD655F0038BA35 /* randomroll.png in Resources */ = {isa = PBXBuildFile; fileRef = 70BD31611CAD655F0038BA35 /* randomroll.png */; };
 /* End PBXBuildFile section */
 
@@ -76,9 +76,7 @@
 		707FE5A51C9AF0F90055EE67 /* Backgroundblack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Backgroundblack.png; sourceTree = "<group>"; };
 		7083B3621C62551300AA1358 /* barrelSprite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = barrelSprite.png; sourceTree = "<group>"; };
 		7083F42E1CB406AC00503EFE /* BearImages.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = BearImages.atlas; sourceTree = "<group>"; };
-		70932FD01CCA671E008DD555 /* iphone5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iphone5@2x.png"; sourceTree = "<group>"; };
-		70932FD21CCA6AD2008DD555 /* iphone6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iphone6@2x.png"; sourceTree = "<group>"; };
-		70932FD41CCA6B66008DD555 /* iphone6plus@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iphone6plus@3x.png"; sourceTree = "<group>"; };
+		70932FD61CCE5D8A008DD555 /* iphone5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iphone5.png; sourceTree = "<group>"; };
 		709E5E731CB6A61300D9C7EE /* RandomRollLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RandomRollLogo.png; sourceTree = "<group>"; };
 		709E785B1C6100BE00F05BB1 /* scrollingclouds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scrollingclouds.png; sourceTree = "<group>"; };
 		709E785D1C6100C600F05BB1 /* bg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg1.png; sourceTree = "<group>"; };
@@ -86,6 +84,8 @@
 		70A1AEBF1CB7EF7D00CA43CD /* RestartButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RestartButton.png; sourceTree = "<group>"; };
 		70A22F361C8498AF00C8AFC7 /* xgqFk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xgqFk.png; sourceTree = "<group>"; };
 		70AD2FC01CC12CAB0054499C /* MrRollLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MrRollLogo.png; sourceTree = "<group>"; };
+		70B8D63C1CCFAD5600A5AB68 /* iphone6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iphone6.png; sourceTree = "<group>"; };
+		70B8D63E1CCFAD7400A5AB68 /* iphone6plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iphone6plus.png; sourceTree = "<group>"; };
 		70BD31611CAD655F0038BA35 /* randomroll.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = randomroll.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -150,9 +150,9 @@
 				70235D051C4940B000F655C2 /* Info.plist */,
 				70AD2FC01CC12CAB0054499C /* MrRollLogo.png */,
 				706D1EF61CC926E900037595 /* defaultbackground.png */,
-				70932FD01CCA671E008DD555 /* iphone5@2x.png */,
-				70932FD21CCA6AD2008DD555 /* iphone6@2x.png */,
-				70932FD41CCA6B66008DD555 /* iphone6plus@3x.png */,
+				70932FD61CCE5D8A008DD555 /* iphone5.png */,
+				70B8D63C1CCFAD5600A5AB68 /* iphone6.png */,
+				70B8D63E1CCFAD7400A5AB68 /* iphone6plus.png */,
 				70BD31611CAD655F0038BA35 /* randomroll.png */,
 				709E785B1C6100BE00F05BB1 /* scrollingclouds.png */,
 				709E785D1C6100C600F05BB1 /* bg1.png */,
@@ -291,25 +291,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				707FE5A61C9AF0F90055EE67 /* Backgroundblack.png in Resources */,
+				70B8D63F1CCFAD7400A5AB68 /* iphone6plus.png in Resources */,
 				70235D041C4940B000F655C2 /* LaunchScreen.storyboard in Resources */,
 				709E5E741CB6A61300D9C7EE /* RandomRollLogo.png in Resources */,
 				70235D011C4940B000F655C2 /* Assets.xcassets in Resources */,
 				709E785C1C6100BE00F05BB1 /* scrollingclouds.png in Resources */,
 				70AD2FC11CC12CAB0054499C /* MrRollLogo.png in Resources */,
+				70932FD71CCE5D8A008DD555 /* iphone5.png in Resources */,
 				702853F51CB7F81000EB318D /* RandomRollBarrellIcon.png in Resources */,
 				709E785E1C6100C600F05BB1 /* bg1.png in Resources */,
-				70932FD31CCA6AD2008DD555 /* iphone6@2x.png in Resources */,
 				707FE59E1C999CAA0055EE67 /* Sprite1.png in Resources */,
-				70932FD51CCA6B67008DD555 /* iphone6plus@3x.png in Resources */,
 				70BD31621CAD655F0038BA35 /* randomroll.png in Resources */,
 				70235CFF1C4940B000F655C2 /* Main.storyboard in Resources */,
 				70A1AEC01CB7EF7D00CA43CD /* RestartButton.png in Resources */,
+				70B8D63D1CCFAD5600A5AB68 /* iphone6.png in Resources */,
 				702853F31CB7F6D200EB318D /* Media.xcassets in Resources */,
 				7083F42F1CB406AC00503EFE /* BearImages.atlas in Resources */,
 				70A1AEBE1CB7EF7700CA43CD /* StartButton.png in Resources */,
 				706D1EF71CC926E900037595 /* defaultbackground.png in Resources */,
 				7083B3631C62551300AA1358 /* barrelSprite.png in Resources */,
-				70932FD11CCA671E008DD555 /* iphone5@2x.png in Resources */,
 				70A22F371C8498AF00C8AFC7 /* xgqFk.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

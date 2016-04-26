@@ -21,12 +21,9 @@ var player : SKSpriteNode!
 var playerWalkingFrames: [SKTexture]!
 
 class GameScene: SKScene, SKPhysicsContactDelegate {
-    var bg1 = SKSpriteNode(imageNamed: "iphone5@2x")
-    var bg2 = SKSpriteNode(imageNamed: "iphone5@2x")
+    var bg1 = SKSpriteNode()
+    var bg2 = SKSpriteNode()
     let gameName = SKSpriteNode(imageNamed: "mrrolllogo")
-    let background1 = SKSpriteNode(imageNamed: "defaultbackground")
-    let background2 = SKSpriteNode(imageNamed: "defaultbackground")
-    let background3 = SKSpriteNode(imageNamed: "defaultbackground")
     let cloud = SKSpriteNode(imageNamed: "scrollingclouds")
     let monster = SKSpriteNode(imageNamed: "barrelSprite")
     let button = SKSpriteNode(imageNamed: "projectile")
@@ -45,6 +42,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
        override func didMoveToView(view: SKView) {
         physicsWorld.gravity = CGVector(dx: 0.0, dy: -2.0)
         //makes sprite appear on the scene
+        chooseBackground()
         addPlayer()
         addGround()
         labelStart()
@@ -90,33 +88,46 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
 
      
     }
-    
+    func chooseBackground(){
+        if UIScreen.mainScreen().bounds.height == 480 {
+            bg1 = SKSpriteNode(imageNamed: "iphone5.png")
+            bg2 = SKSpriteNode(imageNamed: "iphone5.png")
+        } else if UIScreen.mainScreen().bounds.height == 568 {
+            bg1 = SKSpriteNode(imageNamed: "iphone5.png")
+            bg2 = SKSpriteNode(imageNamed: "iphone5.png")
+        } else if UIScreen.mainScreen().bounds.height == 667 {
+            bg1 = SKSpriteNode(imageNamed: "iphone6.png")
+            bg2 = SKSpriteNode(imageNamed: "iphone6.png")
+        } else if UIScreen.mainScreen().bounds.height == 736 {
+            bg1 = SKSpriteNode(imageNamed: "iphone6plus.png")
+            bg2 = SKSpriteNode(imageNamed: "iphone6plus.png")
+        }
+    }
    func backgroundSetUp() {
     
         bg1.anchorPoint = CGPointZero
         bg1.position = CGPointMake(0,0)
         bg1.zPosition = -2
-        bg1.height = size.height
-        bg1.name = "background"
-        addChild(background1)
+    
+        addChild(bg1)
         
         bg2.anchorPoint = CGPointZero
-        bg2.position = CGPointMake(background2.size.width-1, 0)
-        bg2.zPosition = -1
-        bg2.height = size.height
-        addChild(background2)
+        bg2.position = CGPointMake(bg2.size.width - 1, 0)
+        bg2.zPosition = -3
+    
+        addChild(bg2)
         
     }
 
    override func update(currentTime: CFTimeInterval) {
-        bg1.position = CGPoint(x: bg1.position.x - 4, y: background1.position.y)
-        bg2.position = CGPoint(x: bg2.position.x - 4, y: background2.position.y)
+        bg1.position = CGPoint(x: bg1.position.x - 8, y: bg1.position.y)
+        bg2.position = CGPoint(x: bg2.position.x - 8, y: bg2.position.y)
     
         if (bg1.position.x < -bg1.size.width){
             bg1.position = CGPointMake(bg2.position.x + bg2.size.width, bg1.position.y)
         }
         
-        if background2.position.x < -background2.size.width {
+        if bg2.position.x < -bg2.size.width {
             bg2.position = CGPointMake(bg1.position.x + bg1.size.width, bg2.position.y)
         }
     
