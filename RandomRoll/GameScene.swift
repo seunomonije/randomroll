@@ -21,6 +21,7 @@ var player : SKSpriteNode!
 var playerWalkingFrames: [SKTexture]!
 
 class GameScene: SKScene, SKPhysicsContactDelegate {
+    
     var bg1 = SKSpriteNode()
     var bg2 = SKSpriteNode()
     let gameName = SKSpriteNode(imageNamed: "mrrolllogo")
@@ -62,8 +63,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         }
         if canJump == 2 {
             player.physicsBody?.dynamic = true
-            player.physicsBody?.applyImpulse(CGVector(dx: 0.0, dy: 40.0))
-             physicsWorld.gravity = CGVector(dx: 0.0, dy: -1.5)
+            player.physicsBody?.applyImpulse(CGVector(dx: 0.0, dy: 155.0))
+            physicsWorld.gravity = CGVector(dx: 0.0, dy: -2.0)
             canJump = 1
         } else if dead == false && onStartScreen {
             startGame()
@@ -72,6 +73,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             onStartScreen = false
         } else if canJump == 1 {
             player.physicsBody?.dynamic = true
+            physicsWorld.gravity = CGVector(dx: 0.0, dy: -2.0)
         }
         
     
@@ -79,7 +81,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
         
         player.physicsBody?.dynamic = true
-        let jumpHighest = SKAction.runBlock({player.physicsBody?.applyImpulse(CGVector(dx: 0.0, dy: 50.0))})
+        let jumpHighest = SKAction.runBlock({player.physicsBody?.applyImpulse(CGVector(dx: 0.0, dy: 170.0))})
+        physicsWorld.gravity = CGVector(dx: 0.0, dy: -2.0)
         let jumpHighestAction = SKAction.sequence([jumpHighest, SKAction.waitForDuration(3.0)])
         
         if actionForKey("yeetyah") == nil {
@@ -207,7 +210,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         let firstFrame = playerWalkingFrames[0]
         player = SKSpriteNode(texture: firstFrame)
         
-        player.position = CGPoint(x: size.width * 0.1, y: size.height * 0.235)
+        player.position = CGPoint(x: size.width * 0.1, y: size.height * 0.28)
         player.size = CGSize(width: 35, height: 51)
         
         //sets up the physics world to have no gravity
@@ -222,7 +225,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         player.physicsBody?.allowsRotation = false
         //therest
         player.physicsBody?.mass = 1.0
-        player.physicsBody?.restitution = 0.999
+        player.physicsBody?.restitution = 0.5
         player.physicsBody?.friction = 1.0
         player.physicsBody?.angularDamping = 0.0
         player.physicsBody?.linearDamping = 0.0
@@ -258,7 +261,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         let monster = SKSpriteNode(imageNamed: "barrelSprite")
         //determine where to spawn monster along the y axis
-         let actualY = size.height * 0.223
+         let actualY = size.height * 0.25
         
         //position monster slightly off screen along the right edge
         monster.position = CGPoint(x: size.width + monster.size.width/2, y: actualY)
@@ -296,11 +299,13 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     func addGround(){
         addChild(ground)
-        ground.physicsBody = SKPhysicsBody(edgeFromPoint: CGPoint(x: 0, y: size.height * 0.225), toPoint: CGPoint(x: size.width, y: size.height * 0.225))
+        ground.physicsBody = SKPhysicsBody(edgeFromPoint: CGPoint(x: 0, y: size.height * 0.25), toPoint: CGPoint(x: size.width, y: size.height * 0.25))
         ground.physicsBody?.dynamic = false
-        ground.physicsBody?.restitution = 1
+        ground.physicsBody?.restitution = 0.5
         ground.physicsBody?.angularDamping = 0.0
         ground.physicsBody?.linearDamping = 0.0
+        ground.physicsBody?.mass = 100
+        ground.physicsBody?.density = 100
         //sets the category bit mask to be ground category
         ground.physicsBody?.categoryBitMask = PhysicsCategory.Ground
         
