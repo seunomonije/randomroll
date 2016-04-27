@@ -48,7 +48,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         addGround()
         labelStart()
         backgroundSetUp()
-        gameNameSetUp()
         walkingPlayer()
         dead = false
     }
@@ -80,15 +79,15 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
         
-        player.physicsBody?.dynamic = true
         let jumpHighest = SKAction.runBlock({player.physicsBody?.applyImpulse(CGVector(dx: 0.0, dy: 170.0))})
-        physicsWorld.gravity = CGVector(dx: 0.0, dy: -2.0)
         let jumpHighestAction = SKAction.sequence([jumpHighest, SKAction.waitForDuration(3.0)])
         
         if actionForKey("yeetyah") == nil {
             runAction(jumpHighestAction, withKey: "yeetyah")
         }
-
+        if player.position.y < size.height * 0.27 {
+            player.position.y == size.height * 0.26
+        }
      
     }
     func chooseBackground(){
@@ -123,8 +122,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
 
    override func update(currentTime: CFTimeInterval) {
-        bg1.position = CGPoint(x: bg1.position.x - 8, y: bg1.position.y)
-        bg2.position = CGPoint(x: bg2.position.x - 8, y: bg2.position.y)
+        bg1.position = CGPoint(x: bg1.position.x - 4, y: bg1.position.y)
+        bg2.position = CGPoint(x: bg2.position.x - 4, y: bg2.position.y)
     
         if (bg1.position.x < -bg1.size.width){
             bg1.position = CGPointMake(bg2.position.x + bg2.size.width, bg1.position.y)
@@ -271,7 +270,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         addChild(monster)
         
         //Determine speed of the monster
-        let actualDuration = random(min: CGFloat(3), max: CGFloat(11))
+        let actualDuration = random(min: CGFloat(3), max: CGFloat(10.5))
         
         //create the actions
         let actionMove = SKAction.moveTo(CGPoint(x: -monster.size.width/2, y: actualY), duration:NSTimeInterval(actualDuration))
