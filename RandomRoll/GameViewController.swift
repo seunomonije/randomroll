@@ -11,6 +11,7 @@ import SpriteKit
 
 
 class GameViewController: UIViewController {
+    var generator = [6, 12, 8].generate()
     //sprite set up
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,8 +22,10 @@ class GameViewController: UIViewController {
         skView.ignoresSiblingOrder = true
         scene.scaleMode = .ResizeFill
         skView.presentScene(scene)
+        
+        
            }
-    //hides status bar
+        //hides status bar
     override func prefersStatusBarHidden() -> Bool {
         return true
     }

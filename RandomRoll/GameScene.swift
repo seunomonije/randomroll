@@ -35,12 +35,14 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var startLabel = SKSpriteNode(imageNamed: "StartButton")
     let label = SKSpriteNode(imageNamed: "RestartButton")
     let endScore = SKLabelNode(fontNamed: "Helvetica")
+    let highScore = SKLabelNode(fontNamed: "Helvetica")
     var canJump = 1
     var dead = false
     var onStartScreen = true
     
     
        override func didMoveToView(view: SKView) {
+        print("highscore:", NSUserDefaults.standardUserDefaults().integerForKey("highscore"))
         physicsWorld.gravity = CGVector(dx: 0.0, dy: -2.0)
         //makes sprite appear on the scene
         chooseBackground()
@@ -49,7 +51,10 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         labelStart()
         backgroundSetUp()
         walkingPlayer()
+        
         dead = false
+        
+
     }
    
     
@@ -313,6 +318,16 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
   
     }
     
+    func newScore() {
+        print("current score:", seconds)
+        if seconds > NSUserDefaults.standardUserDefaults().integerForKey("highscore") {
+            NSUserDefaults.standardUserDefaults().setInteger(seconds, forKey: "highscore")
+            NSUserDefaults.standardUserDefaults().synchronize()
+        }
+        print("highscore:", NSUserDefaults.standardUserDefaults().integerForKey("highscore"))
+        let highScoreNumber = NSUserDefaults.standardUserDefaults().integerForKey("highscore")
+        highScore.text = "Highscore: \(highScoreNumber)"
+    }
 
     func didBeginContact(contact: SKPhysicsContact) {
         //passes when the two bodies collide, but doesn't guarantee that they are passed in any order, basically arranges the code
@@ -335,6 +350,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
 
         func playerDidCollideWithMonster(projectile:SKSpriteNode, player:SKSpriteNode){
             print("Hit")
+            newScore()
             projectile.removeFromParent()
             player.removeFromParent()
             
@@ -344,6 +360,10 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             endScore.fontSize = 30
             endScore.fontColor = SKColor.blackColor()
             endScore.position = CGPoint(x: size.width/2, y: size.height/1.1)
+            addChild(highScore)
+            highScore.fontSize = 30
+            highScore.fontColor = SKColor.blackColor()
+            highScore.position = CGPoint(x: size.width/2, y: size.height/2.3)
             removeActionForKey("yeet")
             removeActionForKey("barrels")
             addChild(label)
