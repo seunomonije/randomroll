@@ -11,8 +11,6 @@ import SpriteKit
 
 
 class GameViewController: UIViewController {
-    var generator = [6, 12, 8].generate()
-    //sprite set up
     override func viewDidLoad() {
         super.viewDidLoad()
         let scene = GameScene(size:view.bounds.size)
@@ -25,7 +23,7 @@ class GameViewController: UIViewController {
         
         
            }
-        //hides status bar
+        
     override func prefersStatusBarHidden() -> Bool {
         return true
     }

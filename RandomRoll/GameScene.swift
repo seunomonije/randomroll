@@ -24,9 +24,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     var bg1 = SKSpriteNode()
     var bg2 = SKSpriteNode()
-    let gameName = SKSpriteNode(imageNamed: "mrrolllogo")
+    let gameName = SKSpriteNode(imageNamed: "MrRollLogo")
     let cloud = SKSpriteNode(imageNamed: "scrollingclouds")
-    let monster = SKSpriteNode(imageNamed: "barrelSprite")
+    let monster = SKSpriteNode(imageNamed: "RandomRollBarrellIcon")
     let button = SKSpriteNode(imageNamed: "projectile")
     let ground = SKSpriteNode()
     var timer = NSTimer()
@@ -50,6 +50,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         addGround()
         labelStart()
         backgroundSetUp()
+        gameNameSetUp()
         walkingPlayer()
         
         dead = false
@@ -67,7 +68,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         }
         if canJump == 2 {
             player.physicsBody?.dynamic = true
-            player.physicsBody?.applyImpulse(CGVector(dx: 0.0, dy: 155.0))
+            player.physicsBody?.applyImpulse(CGVector(dx: 0.0, dy: 158.0))
             physicsWorld.gravity = CGVector(dx: 0.0, dy: -2.0)
             canJump = 1
         } else if dead == false && onStartScreen {
@@ -275,7 +276,16 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         addChild(monster)
         
         //Determine speed of the monster
-        let actualDuration = random(min: CGFloat(3), max: CGFloat(10.5))
+        var actualDuration = random(min: CGFloat(3), max: CGFloat(5))
+        if 30 < seconds && seconds < 60 {
+            actualDuration = random(min: CGFloat(2.5), max: CGFloat(6))
+        }
+        if 60 < seconds && seconds < 90 {
+            actualDuration = random(min: CGFloat(2.5), max: CGFloat(8))
+        }
+        if 90 < seconds && seconds < 150 {
+            actualDuration = random(min: CGFloat(2.5), max: CGFloat(10))
+        }
         
         //create the actions
         let actionMove = SKAction.moveTo(CGPoint(x: -monster.size.width/2, y: actualY), duration:NSTimeInterval(actualDuration))
